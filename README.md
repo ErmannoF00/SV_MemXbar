@@ -27,31 +27,6 @@ This project implements a memristor crossbar model inspired by the [JART VCM1 me
    git clone https://github.com/your-repo/memristor-crossbar.git
    ```
 
-2. Install required Python packages:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-## Usage
-
-### Simulate Memristor Behavior
-Run the Python script to simulate the memristor and visualize its I-V characteristics:
-```bash
-python simulate_memristor.py
-```
-
-### Train Neural Network
-Use the provided script to train a spiking neural network on sample data:
-```bash
-python train_snn.py
-```
-
-### Analyze Crossbar Dynamics
-Analyze the crossbar behavior under different input stimuli:
-```bash
-python analyze_crossbar.py
-```
-
 ## References
 
 1. [F. Cueppers et al., "Exploiting the switching dynamics of HfO2-based ReRAM devices for reliable analog memristive behavior," APL Materials 7 091105 (2019)](https://doi.org/10.1063/1.5108654).
