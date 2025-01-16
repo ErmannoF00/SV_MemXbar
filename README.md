@@ -1,7 +1,7 @@
 # Memristor Xbar for Neuromorphic Applications
 
 <p style="text-align: center;">
-    <img src="AI_gen_img.jpg" alt="Memristor Crossbar AI Image" width="500" />
+    <img src="AI_gen_img.jpg" alt="Memristor Crossbar AI Image" width="200" height="200" />>
 </p>
 
 
