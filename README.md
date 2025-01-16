@@ -1,6 +1,9 @@
-# Memristor Crossbar Model for Neuromorphic Applications
+# Memristor Crossbar anD AdLIF SNN for Neuromorphic Applications
 
-![Memristor Crossbar Schematic](./AI_gen_img.jpg)
+<p style="text-align: center;">
+    <img src="(./AI_gen_img.jpg)" alt="Memristor Crossbar AI Image" width="500" />
+</p>
+
 
 This project implements a memristor crossbar model inspired by the [JART VCM1 memristor model](https://emrl.de/JART.html). The model is designed for neuromorphic computing applications, where memristors are used as artificial synapses in spiking neural networks (SNNs). The output is processed by adaptive leaky integrate-and-fire (AdLIF) neurons, enabling learning and inference capabilities.
 
