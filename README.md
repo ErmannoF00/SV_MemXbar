@@ -1,48 +1,56 @@
 # Memristor Crossbar Model for Neuromorphic Applications
 
-## Overview
-This project implements a **memristor crossbar** model designed for neuromorphic computing applications. It leverages:
+![Memristor Crossbar Schematic](./AI_gen_img.jpg)
 
-1. **Memristor Model**: Inspired by the JART memristor model ([JART Memristor Model](https://emrl.de/JART.html)) to simulate memristive behavior accurately.
-2. **Adaptive Leaky Integrate-and-Fire (AdLIF) Neuron**: A spiking neural network (SNN) implementation based on the AdLIF neuron model for learning and inference tasks.
+This project implements a memristor crossbar model inspired by the [JART VCM1 memristor model](https://emrl.de/JART.html). The model is designed for neuromorphic computing applications, where memristors are used as artificial synapses in spiking neural networks (SNNs). The output is processed by adaptive leaky integrate-and-fire (AdLIF) neurons, enabling learning and inference capabilities.
 
-The crossbar structure, coupled with AdLIF neurons, facilitates energy-efficient computation for machine learning and neuromorphic tasks.
+## Key Features
 
-## Features
-- **Memristor Dynamics**:
-  - Based on realistic memristor physics, including resistance modulation and ion dynamics.
-  - Configurable parameters for exploring different memristor technologies.
+- **Memristor Model**: Based on the JART VCM1 model, providing realistic analog memristive behavior.
+- **Crossbar Array**: A scalable crossbar architecture to demonstrate neuromorphic synaptic connections.
+- **Adaptive Leaky Integrate-and-Fire Neurons**: Implements AdLIF neurons to process spiking outputs for learning.
+- **Visualization**: Includes plots for memristor behavior, neuron spikes, and network dynamics.
 
-- **Crossbar Architecture**:
-  - Models large-scale crossbar arrays with memristors at each junction.
-  - Facilitates weighted summation and synaptic updates.
+## Requirements
 
-- **AdLIF Neuron Model**:
-  - Simulates spiking behavior for neuromorphic processing.
-  - Incorporates adaptive thresholds for learning mechanisms.
+- SystemVerilog for modeling the memristor and crossbar.
+- Python for simulations, visualizations, and neuron modeling.
+- MATLAB/Octave (optional) for additional analysis and visualization.
 
-## Objectives
-- To create a scalable, modular, and physics-based simulation of memristor crossbars.
-- To demonstrate the potential of memristor crossbars for implementing synaptic weight storage in spiking neural networks.
-- To integrate memristor-based crossbars with AdLIF neurons for neuromorphic learning and inference.
+## Installation
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/your-repo/memristor-crossbar.git
+   ```
+
+2. Install required Python packages:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
 ## Usage
-1. **Memristor Simulation**: Use the provided memristor module to simulate individual device characteristics.
-2. **Crossbar Design**: Configure the crossbar size and connect memristors to represent synaptic weights.
-3. **AdLIF Neuron Simulation**: Simulate spiking behavior and observe how the network adapts to input patterns.
-4. **Integration**: Combine the crossbar and AdLIF neuron models to create a neuromorphic system capable of learning tasks.
 
-## Applications
-- Neuromorphic computing
-- Spiking neural network simulation
-- Low-power AI inference
-- Real-time pattern recognition
+### Simulate Memristor Behavior
+Run the Python script to simulate the memristor and visualize its I-V characteristics:
+```bash
+python simulate_memristor.py
+```
+
+### Train Neural Network
+Use the provided script to train a spiking neural network on sample data:
+```bash
+python train_snn.py
+```
+
+### Analyze Crossbar Dynamics
+Analyze the crossbar behavior under different input stimuli:
+```bash
+python analyze_crossbar.py
+```
 
 ## References
-- **JART Memristor Model**: [JART Memristor Model](https://iwe.rwth-aachen.de)
-- **AdLIF Neuron**: Adaptive LIF neuron model inspired by spiking neural network research.
 
-## Future Work
-- Scaling the crossbar for large datasets.
-- Integration with real-world machine learning tasks.
-- Optimization of the AdLIF neuron parameters for diverse applications.
+1. [F. Cueppers et al., "Exploiting the switching dynamics of HfO2-based ReRAM devices for reliable analog memristive behavior," APL Materials 7 091105 (2019)](https://doi.org/10.1063/1.5108654).
+
+2. Adaptive Leaky Integrate-and-Fire Neurons: Refer to related papers for details on SNN dynamics and implementations.
