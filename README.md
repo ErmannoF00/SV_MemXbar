@@ -24,7 +24,7 @@ This project implements a memristor crossbar model inspired by the [JART VCM1 me
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-repo/memristor-crossbar.git
+   git clone https://github.com/ErmannoF00/SV_MemXbar.git
    ```
 
 ## References
