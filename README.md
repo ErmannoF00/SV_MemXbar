@@ -1,4 +1,4 @@
-# Memristor Xbar for Neuromorphic Applications
+# Memristor SV Crossbar
 
 <p style="text-align: center;">
     <img src="AI_gen_img.jpg" alt="Memristor Crossbar AI Image" width="200" height="200"/>
