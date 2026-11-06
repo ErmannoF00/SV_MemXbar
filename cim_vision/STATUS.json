@@ -1,0 +1,37 @@
+{
+  "project": "SV_MemXbar CIM-Vision",
+  "as_of": "2026-11-06",
+  "status_definitions": {
+    "pass": "executed in this task environment and completed successfully",
+    "written_unexecuted": "sources and tests prepared, but no toolchain execution proof",
+    "not_implemented": "not part of this deliverable",
+    "user_reported_pass": "Passed in user-provided WSL terminal log on 2026-11-06; not independently rerun in assistant container",
+    "pending_current_log": "No successful log for the final revised source supplied yet"
+  },
+  "software_oracle": "pass",
+  "software_pytests": 11,
+  "software_samples_exact_sparse_dense": 2000,
+  "software_int8_accuracy": 0.998,
+  "rtl_testbenches": "user_reported_pass",
+  "icarus_simulation": "user_reported_pass",
+  "verilator_lint": "pending_current_log",
+  "yosys_synthesis": "pending_current_log",
+  "vivado_synthesis": "written_unexecuted",
+  "real_fpga_validation": "not_implemented",
+  "real_dvs_dataset_validation": "not_implemented",
+  "physical_sram_cim_macro": "not_implemented",
+  "real_memory_energy_measurement": "not_implemented",
+  "github_push": "not_performed",
+  "migration_strategy": "additive directory, leave original repository intact",
+  "rtl_source_correction": "Fixed undefined score-bank offset LO; needs HDL regression",
+  "rtl_cycle_benchmark": "pending_current_log",
+  "source_bundle": "additive integration preserving original src and TB",
+  "rtl_cycle_results_from_sim_all": {
+    "parallel_sparse": 2548,
+    "parallel_dense": 7865,
+    "serial_sparse": 10864,
+    "serial_dense": 34745,
+    "samples": 24
+  },
+  "source_updates_since_prepared_bundle": "signed product sign extension; event encoder subpixel-bit lint; reserved expect identifier in tb_signed_core"
+}

@@ -1,0 +1,45 @@
+name: Event-CIM Vision RTL
+
+on:
+  push:
+    paths:
+      - 'cim_vision/**'
+      - '.github/workflows/cim_vision.yml'
+  pull_request:
+    paths:
+      - 'cim_vision/**'
+      - '.github/workflows/cim_vision.yml'
+
+jobs:
+  numerical-rtl:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    defaults:
+      run:
+        working-directory: cim_vision
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y iverilog verilator yosys
+          python -m pip install 'numpy>=1.24,<3' 'pytest>=8,<10'
+      - name: Software reference
+        run: make reference
+      - name: Icarus regressions
+        run: make sim-all
+      - name: Verilator lint
+        run: make lint
+      - name: Yosys structural checks
+        run: make synth
+      - name: Measure RTL dense and sparse cycle counts
+        run: make bench-rtl
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: event-cim-verification
+          path: cim_vision/build/
+          if-no-files-found: ignore

@@ -1,0 +1,4 @@
+numpy>=1.24,<3
+pytest>=8,<10
+matplotlib>=3.6,<4
+# To retrain with tools/train.py, install PyTorch separately (optional).

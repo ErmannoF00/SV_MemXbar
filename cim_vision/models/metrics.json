@@ -1,0 +1,23 @@
+{
+  "seed_train": 20261101,
+  "seed_test": 20261102,
+  "n_train": 10000,
+  "n_test": 2000,
+  "float_test_accuracy": 0.998,
+  "quantized_test_accuracy": 0.998,
+  "mean_nonzero": 17.581,
+  "mean_events": 26.681,
+  "max_nonzero": 22,
+  "n_rtl_test": 24,
+  "features": 128,
+  "hidden": 32,
+  "classes": 4,
+  "w1_clip_fraction": 0.0,
+  "w2_clip_fraction": 0.0,
+  "expected_score_first": [
+    -49,
+    -61,
+    -14,
+    -183
+  ]
+}

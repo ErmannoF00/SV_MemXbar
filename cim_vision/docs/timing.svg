@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="970" height="360" viewBox="0 0 970 360">
+ <rect width="970" height="360" fill="white"/>
+ <style>text{font-family:Arial,sans-serif;fill:#1b3449} .head{font-size:22px;font-weight:bold} .lbl{font-size:14px} .tiny{font-size:12px;fill:#536d83}.c{stroke:#dae1ea;stroke-width:1}.pulse{fill:#b6d9f2;stroke:#3175a1}.lat{fill:#dfecd9;stroke:#6f985c}.stall{fill:#f4d9bd;stroke:#a66b2d}</style>
+ <text x="24" y="36" class="head">One parallel-mode MVM input, then output backpressure (conceptual waveform)</text>
+ <text x="22" y="62" class="tiny">Each column is one rising clock edge; actual regression must confirm these relations in an HDL simulator.</text>
+ <g transform="translate(205 89)">
+  <rect x="0" y="0" width="720" height="234" fill="#fcfcfd" stroke="#becbd6"/>
+  <g>
+   <path d="M0 0V234M90 0V234M180 0V234M270 0V234M360 0V234M450 0V234M540 0V234M630 0V234M720 0V234" class="c"/>
+  </g>
+  <g text-anchor="middle" class="tiny"><text x="45" y="18">c0</text><text x="135" y="18">c1</text><text x="225" y="18">c2</text><text x="315" y="18">c3</text><text x="405" y="18">c4</text><text x="495" y="18">c5</text><text x="585" y="18">c6</text><text x="675" y="18">c7</text></g>
+  <rect class="lat" x="2" y="35" width="86" height="28"/><rect class="lat" x="92" y="35" width="86" height="28"/><rect class="pulse" x="182" y="35" width="86" height="28"/><rect class="lat" x="272" y="35" width="176" height="28"/><rect class="pulse" x="452" y="35" width="176" height="28"/>
+  <text x="40" y="54" class="tiny">IDLE</text><text x="126" y="54" class="tiny">COLLECT</text><text x="207" y="54" class="tiny">EXEC</text><text x="311" y="54" class="tiny">COLLECT</text><text x="486" y="54" class="tiny">EMIT</text>
+  <rect class="pulse" x="93" y="81" width="83" height="28"/><text x="105" y="100" class="tiny">read idx</text>
+  <rect class="pulse" x="183" y="125" width="83" height="28"/><text x="196" y="144" class="tiny">MAC</text>
+  <rect class="pulse" x="452" y="170" width="86" height="28"/><rect class="stall" x="542" y="170" width="86" height="28"/><rect class="pulse" x="632" y="170" width="86" height="28"/>
+  <text x="474" y="187" class="tiny">valid</text><text x="556" y="187" class="tiny">stall</text><text x="653" y="187" class="tiny">valid</text>
+  <text x="451" y="221" class="tiny">Output data must remain stable throughout the stalled interval.</text>
+ </g>
+ <text x="18" y="139" class="lbl">FSM state</text><text x="18" y="187" class="lbl">weight read</text><text x="18" y="229" class="lbl">bank arithmetic</text><text x="18" y="277" class="lbl">out_valid/ready</text>
+</svg>

@@ -1,0 +1,8 @@
+{
+  "TB/tb_memristor.sv": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "TB/tb_neuron.sv": "a9f2c32802eadd259e64094876e511cc3bb1c86ca4c4537ce05f87ae12263964",
+  "src/1T1R_Xbar.sv": "a1d8b29a21eb834448275affbb80e3129c263c790cdaee4a8ab8b154ea9ace42",
+  "src/AdLIF.sv": "95210b4b69e0606d5f16840b7e0180448d3b822fe2626a98da95bdd517148b4b",
+  "src/Memristor.sv": "1516b18f8fb424e3ac8f2d6ea8ecbe0824f68f5b98d4ed6266900eb6f2537ddc",
+  "src/Readout.sv": "15b0aeb94d0b98fe6886f83095cb06eebd8ef9040108d18afe8629deac969ec6"
+}
