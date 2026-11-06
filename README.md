@@ -1,5 +1,7 @@
 # SV_MemXbar
 
+![SV_MemXbar architecture: digital event-indexed inference and conceptual 1T1R reference](docs/architecture_overview.png)
+
 SystemVerilog models of a memristive crossbar and AdLIF dynamics, accompanied by an independent event-indexed digital inference accelerator. The two implementations investigate different abstraction levels; they do not share a physical compute array.
 
 ## Memristor array model
